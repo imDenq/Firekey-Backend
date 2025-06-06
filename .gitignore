@@ -1,0 +1,130 @@
+# =============================================================================
+# GITIGNORE POUR PROJET DJANGO SÉCURISÉ
+# =============================================================================
+
+# Fichiers d'environnement - CRITIQUE : Ne jamais committer !
+.env
+.env.*
+!.env.example
+
+# Base de données
+*.db
+*.sqlite3
+db.sqlite3
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Tests et coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Django spécifique
+/static/
+/staticfiles/
+/media/
+local_settings.py
+
+# Logs - SÉCURITÉ : Ne jamais committer les logs !
+logs/
+*.log
+
+# Fichiers temporaires et uploads
+tmp/
+temp/
+uploads/
+
+# Clés et certificats - CRITIQUE !
+*.key
+*.pem
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Sauvegardes de base de données
+*.sql
+*.dump
+*.backup
+
+# Fichiers de cache
+.cache/
+.parcel-cache/
+
+# Configuration locale
+local_settings.py
+settings_local.py
+
+# Redis
+dump.rdb
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
